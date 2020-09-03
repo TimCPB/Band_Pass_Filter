@@ -15,6 +15,6 @@ describe("BandPassFilter", function(){
   })
 
   it("adjusts a value from above the upper limit", function() {
-    expect(bandPassFilter.filter([50, 100, 1050])).toEqual([50, 100, 1000])
+    expect(bandPassFilter.filter([1050])).toEqual([1000])
   })
 })
