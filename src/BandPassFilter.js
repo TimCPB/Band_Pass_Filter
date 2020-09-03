@@ -18,4 +18,8 @@ class BandPassFilter {
         }, this)
         return newArray
       }
+
+  setLowerLimit(newLimit){
+    this.lowerLimit = newLimit
+  }
     }
