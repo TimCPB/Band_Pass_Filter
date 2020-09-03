@@ -1,5 +1,5 @@
 describe("BandPassFilter", function(){
-  var BandPassFilter
+  var bandPassFilter
 
   beforeEach(function() {
     bandPassFilter = new BandPassFilter();
