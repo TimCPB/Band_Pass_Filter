@@ -4,7 +4,7 @@ class BandPassFilter {
     this.upperLimit = 1000
   }
 
-  // filter(array){
-
-  // }
+  filter(array){
+    array
+  }
 }
