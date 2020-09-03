@@ -2,15 +2,20 @@ Digital audio plugins
 musicians - electronic music
 makes filters to modify track sounds
 
-New filter - BandPass filter
+### Band Pass Filter
+
+Client makes digital audio plugins that allow musicians to modify track sounds
+
+Client wants a new filter - *Band Pass Filter*
+
   - allows only one band (range of frequencies) to pass through it. Any frequencies outside the band are cut off
 
-   - array of frequencies, each frequency an integer
-   - 2 frequencies - 40 lower, 1000 upper
-   - would like to be able to supply lower and upper limits as arguments
-   - Adjust all frequencies outside of the range to bring them within range
-   - no negative numbers
-   - throw error if value is corrupted - e.g. null - anything not integer 
+  - given an array of frequencies, each frequency an integer
+  - 2 frequency limits - 40mHz lower, 1000mHz upper
+  - would like to be able to supply lower and upper limits as arguments
+  - Adjust all frequencies outside of the range to bring them within range
+  - no negative numbers
+  - throw error if value is corrupted - e.g. null - anything not integer 
 
 | Inout           | Output          |
 |-----------------|-----------------|
