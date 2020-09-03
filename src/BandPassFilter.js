@@ -7,6 +7,9 @@ class BandPassFilter {
   filter(array){
       var newArray = []
       array.forEach(function(number) {
+        // if(Number.isInteger(number) !== true){
+        //   throw new Error()
+        // }
         if(number > this.upperLimit){
           newArray.push(this.upperLimit)
         }

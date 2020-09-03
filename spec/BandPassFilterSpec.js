@@ -36,4 +36,9 @@ describe("BandPassFilter", function(){
     bandPassFilter.setUpperLimit(1200)
     expect(bandPassFilter.filter([1500, 1100])).toEqual([1200, 1100])
   })
+
+  it("throws an error for a non-integer value", function() {
+    expect(function() { bandPassFilter.filter([50, "hello"]) } ).toThrowError()
+    // expect(function() { bandPassFilter.filter([null, 40]) } ).toThrowError()
+  })
 })
