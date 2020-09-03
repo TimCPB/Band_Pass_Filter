@@ -15,6 +15,9 @@ class BandPassFilter {
       if(array[0] > this.upperLimit){
         return [this.upperLimit]
       }
+      else if(array[0] < this.lowerLimit){
+        return [this.lowerLimit]
+      }
       else
         return array
       }
