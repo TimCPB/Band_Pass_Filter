@@ -9,4 +9,8 @@ describe("BandPassFilter", function(){
     expect(bandPassFilter.lowerLimit).toEqual(40)
     expect(bandPassFilter.upperLimit).toEqual(1000)
   })
+
+  it("returns [50] when given [50]", function() {
+    expect(bandPassFilter.filter([50])).toEqual[50]
+  })
 })
