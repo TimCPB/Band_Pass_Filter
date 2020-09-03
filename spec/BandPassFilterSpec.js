@@ -31,4 +31,9 @@ describe("BandPassFilter", function(){
     bandPassFilter.setLowerLimit(20)
     expect(bandPassFilter.filter([10, 30])).toEqual([20, 30])
   })
+
+  it("can set a new upper limit", function() {
+    bandPassFilter.setUpperLimit(1200)
+    expect(bandPassFilter.filter([1500, 1100])).toEqual([1200, 1100])
+  })
 })
