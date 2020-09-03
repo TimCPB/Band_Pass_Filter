@@ -41,4 +41,5 @@ describe("BandPassFilter", function(){
     expect(function() { bandPassFilter.filter([50, "hello"]) } ).toThrowError()
     expect(function() { bandPassFilter.filter([null, 40]) } ).toThrowError()
     expect(function() { bandPassFilter.filter([60, 70.4]) } ).toThrowError()
+  })
 })
