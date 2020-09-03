@@ -5,6 +5,6 @@ class BandPassFilter {
   }
 
   filter(array){
-    array
+    return array
   }
 }
